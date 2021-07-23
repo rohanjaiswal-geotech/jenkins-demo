@@ -9,6 +9,6 @@ public class MyController {
 
     @RequestMapping("/api")
     public String hello(@RequestParam("name") String name) {
-        return "Hello " + name;
+        return "Hello there" + name;
     }
 }
