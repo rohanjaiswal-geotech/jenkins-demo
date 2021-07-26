@@ -20,6 +20,7 @@ class DemoApplicationTests {
     void DemoTestCase2() {
         demoApplication = new DemoApplication();
         assertThat(demoApplication.DemoTestCase()).isEqualTo(true);
+        assertThat(demoApplication).isNotNull();
     }
 
 }
