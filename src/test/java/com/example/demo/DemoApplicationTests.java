@@ -8,9 +8,16 @@ import static org.assertj.core.api.Assertions.assertThat;
 @SpringBootTest
 class DemoApplicationTests {
 
+    DemoApplication demoApplication;
+
     @Test
-    void contextLoads() {
-        DemoApplication demoApplication = new DemoApplication();
+    void DemoTestCase1() {
+        demoApplication = new DemoApplication();
+        assertThat(demoApplication.DemoTestCase()).isEqualTo(true);
+    }
+
+    @Test
+    void DemoTestCase2() {
         assertThat(demoApplication.DemoTestCase()).isEqualTo(true);
     }
 
