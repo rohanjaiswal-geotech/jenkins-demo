@@ -18,6 +18,7 @@ class DemoApplicationTests {
 
     @Test
     void DemoTestCase2() {
+        demoApplication = new DemoApplication();
         assertThat(demoApplication.DemoTestCase()).isEqualTo(true);
     }
 
